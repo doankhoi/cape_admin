@@ -6,7 +6,7 @@ class NavbarMenu extends Component {
 			<div className="navbarmenu">
 				<div className="ui fixed top  menu no-border no-radius borderless navmenu">
 					<a className="item active no-padding logo" href="dashboard.html" style={{ width: "250px" }}>
-						<img className="ui image logoImg" src="/img/cohost-club-logo.png" />
+						<img className="ui image logoImg" src="/img/cohost-club-logo.png" alt=""/>
 					</a>
 					<a className="item hamburger" data-name="show">
 						<i className="align justify icon"></i>

@@ -5,7 +5,7 @@ class NavbarMenu extends Component {
         return (
             <div className="ui vertical push sidebar menu  thin" id="toc">
                 <a href="dashboard-v1.html" className="ui medium image borderless">
-                    <img src="img/bg/3.png" />
+                    <img src="img/bg/3.png" alt=""/>
                 </a>
                 <a className="item">
                     <b>Main</b>

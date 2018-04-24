@@ -1,23 +1,45 @@
 import React, { Component } from 'react';
+import MenuLink from '../menu/MenuLink';
 
 class SideBar extends Component {
     render() {
         return (
             <div className="toc">
                 <div className="ui visible left vertical sidebar menu no-border sidemenu">
-                    <a className="item">
-                        <i className="building icon"></i>Listings
-                    </a>
-                    <a className="item">
-                        <i className="database icon"></i>Knowledge Base
-                    </a>
-                    <a className="item">
-                        <i className="comments icon"></i>Messages
-                    </a>
+                    <MenuLink 
+                        to="/listings" 
+                        label="Listings" 
+                        activeOnlyWhenExact={ false }
+                        children={ <i className="building icon"></i> }
+                        />
+                    
+                    <MenuLink 
+                        to="/kb" 
+                        label="Knowledge Base" 
+                        activeOnlyWhenExact={ false }
+                        children={ <i className="database icon"></i> }
+                        />
 
-                    <a className="item">
-                        <i className="clipboard outline icon"></i>Templates
-                    </a>
+                    <MenuLink 
+                        to="/messages" 
+                        label="Messages" 
+                        activeOnlyWhenExact={ false }
+                        children={ <i className="comments icon"></i> }
+                        />
+
+                    <MenuLink 
+                        to="/templates" 
+                        label="Templates" 
+                        activeOnlyWhenExact={ false }
+                        children={ <i className="clipboard outline icon"></i> }
+                        />
+
+                    <MenuLink 
+                        to="/teams" 
+                        label="Teams" 
+                        activeOnlyWhenExact={ false }
+                        children={ <i className="sign in alternate icon"></i> }
+                        />
 
                     <div className="ui accordion">
                         <div className="title">
@@ -25,8 +47,12 @@ class SideBar extends Component {
                             Teams
                         </div>
                         <div className="content">
-                            <a className="item">Teams Signup</a>
-                            <a className="item">Teams Members</a>
+                            <a className="item">
+                                <i className="sign in alternate icon"/>Teams Signup
+                            </a>
+                            <a className="item">
+                                <i className="archive icon"/>Teams Members
+                            </a>
                         </div>
                     </div>
 
@@ -36,7 +62,7 @@ class SideBar extends Component {
                             Reservations
                         </div>
                         <div className="content">
-                            <a className="item"><i className="address book outline icon"></i>Reservations</a>
+                            <a className="item"><i className="address book outline icon"/>Reservations</a>
                             <a className="item"><i className="calendar icon" />Manage Icalendar</a>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ class Main extends Component {
                     <div className="sixteen wide column">
                         <div className="ui red segment">
                             <div className="row">
-                                Noi dung content
+                                
                             </div>
                         </div>
                     </div>
